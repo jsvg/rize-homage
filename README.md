@@ -1,9 +1,14 @@
 # Rize Angular Mock App
 Small Angular web app inspired by [Rizeup.io](rizeup.io) product idea. App currently hosted by Heroku at [rize-homage.herokuapp.com](https://rize-homage.herokuapp.com/).
 
+## Demo
+![](http://g.recordit.co/HymBbKeayx.gif)
+
 ## Tech
 🔑 Angular build workflow using gulp: ES6, Browser Sync, SCSS, minification, templatecache, DI annotations, and more.
+
 🔑 Angular UI router
+
 🔑 D3.js
 
 ## Installing Locally
