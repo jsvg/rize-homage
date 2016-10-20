@@ -1,0 +1,70 @@
+html {
+  min-height: 100%;
+  font-family: 'Raleway', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  color: #FFF;
+  border: 1px solid #FFF;
+  border-radius: 4px;
+  background: linear-gradient(180deg, rgba(#FFF, 0.1), rgba(#FFF, 0.03), rgba(#FFF, 0.1));
+  box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.1);
+  padding: 0.4em 1.2em;
+}
+
+// materialesque design
+.material-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 2em 0;
+  }
+
+  label {
+    font-size: 2em;
+    color: rgb(30, 30, 30);
+    margin-bottom: 0.5em;
+    font-weight: bold;
+  }
+
+  input {
+    position: relative;
+    font-size: 1.2em;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 0.1em;
+    width: 100%;
+    padding-bottom: 0.2em;
+    color: #FFF;
+    text-align: center;
+    background: transparent;
+    outline: none;
+    border-width: 0 0 1px;
+    border-radius: 0;
+    border-style: solid;
+    border-color: rgba(#FFF, 0.3);
+
+    &:focus {
+      border-color: #FFF375;
+    }
+
+    &::placeholder { color: rgba(#FFF, 0.3); }
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+    }
+  }
+}

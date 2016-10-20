@@ -1,0 +1,5 @@
+gulpfile.js
+build/*
+dist/*
+conduit/*
+src/app/config/app.templates.js

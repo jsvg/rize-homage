@@ -1,0 +1,33 @@
+.new-goal {
+  min-height: calc(100vh - 12em);
+  padding-top: 2em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background-image: url('./assets/bg-overlay.svg'), linear-gradient(-90deg, #707CF5 20%, #9A71F6 100%);
+  background-position: center, center;
+  background-size: cover, cover;
+
+  .goal-name > label { color: rgb(32, 42, 69); }
+  .goal-target > label { color: rgb(32, 44, 69); }
+  .goal-current > label { color: rgb(32, 46, 69); }
+
+  .make-it-happen {
+    font-size: 1.2em;
+
+    button {
+      transition: 0.2s ease-in-out all;
+
+      &:disabled {
+        cursor: not-allowed;
+        opacity: 0.5;
+      }
+
+      &:hover {
+        background: #FFF;
+        color: rgba(20, 20, 20, 1);
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+<div class="chart-header">
+  <div class="goal-selector">
+    <div class="arrow"><i ng-click="$ctrl.advanceGoalSelector('l')" class="ion-android-arrow-dropleft-circle"></i></div>
+    <div class="selector">
+      <div class="goal-title" ng-bind="$ctrl.goalSelector.title"></div>
+      <div class="goal-subtitle" ng-bind="$ctrl.goalSelector.subtitle"></div>
+    </div>
+    <div class="arrow"><i ng-click="$ctrl.advanceGoalSelector('r')" class="ion-android-arrow-dropright-circle"></i></div>
+  </div>
+</div>
+<div class="button">
+  <button ng-click="$ctrl.goToNewGoal()"><span class="plus">✚</span> Goal</button>
+</div>
+<div class="charts">
+  <goals-chart
+    margin="0"
+    bar-padding="2"
+    bar-height="100"
+    data="$ctrl.goals"
+    selector="$ctrl.goalSelector.chartOption"
+    labels-key="name"
+    on-click="$ctrl.d3onClick(item)"
+  />
+</div>

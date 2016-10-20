@@ -1,0 +1,102 @@
+.goals {
+  background-image: url('./assets/bg-overlay.svg'), linear-gradient(-90deg, #707CF5 20%, #9A71F6 100%);
+  background-position: center, center;
+  background-size: cover, cover;
+
+  .chart-header {
+    padding-top: 20px;
+    text-align: center;
+
+    .goal-selector {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 5px;
+
+      .arrow {
+        color: rgba(#FFF, 0.8);
+        padding: 0 10px 15px;
+        line-height: 0;
+        font-weight: bold;
+        font-size: 30px;
+        transition: 0.2s ease all;
+
+        i { cursor: pointer; }
+
+        &:hover { color: rgba(#FFF375, 0.9); }
+      }
+    }
+
+    .goal-title {
+      color: #202345;
+      font-size: 3em;
+      font-weight: 700;
+      text-align: center;
+      letter-spacing: 0.15em;
+      padding-left: 5px;
+    }
+
+    .goal-subtitle {
+      color: #203A45;
+      font-size: 1em;
+    }
+  }
+
+  .charts {
+    line-height: 0;
+  }
+
+  .button {
+    text-align: center;
+    padding-top: 1em;
+
+    button {
+      padding: 0.4em 3em 0.5em;
+      text-transform: lowercase;
+    }
+
+    .plus {
+      background: transparent;
+      color: #FFF375;
+    }
+
+    * {
+      transition: 0.3s ease-in-out all;
+    }
+
+    button:hover,
+    button:hover > * {
+      background: #FFF;
+      color: #707CF5;
+    }
+  }
+}
+
+goals-chart {
+  svg {
+    padding: 15px 0; // give space for shadow;
+  }
+
+  .rect-back {
+    fill: inherit;
+    cursor: pointer;
+
+    &:hover {
+      fill: rgba(#007A7A, 0.3);
+    }
+  }
+
+  .text-label {
+    font-family: 'Source Sans Pro', sans-serif;
+    overflow: hidden;
+    font-weight: 400;
+    fill: #FFF375;
+  }
+
+  .text-sublabel {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    fill: rgba(#FFF9DB, 0.9);
+    font-size: 35px;
+  }
+}

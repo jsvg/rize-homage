@@ -1,0 +1,19 @@
+<div class="new-goal">
+  <form class="material-form" name="goalForm">
+    <div class="group goal-name">
+      <label>Give a name to your goal:</label>
+      <input ng-model="goal.name" type="text" placeholder="Buy a sweet private island" required>
+    </div>
+    <div class="group goal-target">
+      <label>What will it take to meet it?</label>
+      <input ng-model="goal.target" type="number" placeholder="1500000" ng-min="0" ng-step="1" required>
+    </div>
+    <div class="group goal-current">
+      <label>Bootstrapping the fund?</label>
+      <input ng-model="goal.current" type="number" placeholder="200" ng-min="0" ng-step="1" required>
+    </div>
+  </form>
+  <div class="make-it-happen">
+    <button class="btn" ng-click="$ctrl.saveGoal(goal)" ng-disabled="goalForm.$invalid">Let's make it happen</button>
+  </div>
+</div>

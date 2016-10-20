@@ -1,0 +1,45 @@
+.goal-details {
+  min-height: calc(100vh - 12em);
+  padding: 1em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background-image: url('./assets/bg-overlay.svg'), linear-gradient(-90deg, #707CF5 20%, #9A71F6 100%);
+  background-position: center, center;
+  background-size: cover, cover;
+
+  .edit-goal-details {
+    margin-top: 1em;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 0.8em;
+  }
+
+  .group {
+    margin: 1em 0;
+  }
+
+  label {
+    font-size: 1em;
+    display: inline-block;
+  }
+
+  input {
+    margin-bottom: 0.6em;
+  }
+
+  .btns {
+    margin-top: 1.5em;
+    display: inline-block;
+
+    button {
+      width: 150px;
+      margin: 3px;
+      transition: 0.2 ease-in-out all;
+    }
+
+    .update:hover { background: #707CF5; }
+    .remove:hover { background: #FF3F56; }
+  }
+}

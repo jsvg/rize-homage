@@ -1,0 +1,21 @@
+<div class="goal-details">
+  <form class="material-form" name="editGoalForm">
+    <div class="edit-goal-details">Goal Details</div>
+    <div class="group">
+      <label>Objectively Awesome Goal Name</label>
+      <input ng-model="$ctrl.goal.name" type="text" required>
+    </div>
+    <div class="group">
+      <label>Amount To Reach Goal</label>
+      <input ng-model="$ctrl.goal.target" type="number" required>
+    </div>
+    <div class="group">
+      <label>Your Noble Contributions to the Fund</label>
+      <input ng-model="$ctrl.goal.current" type="number" required>
+    </div>
+  </form>
+  <div class="btns">
+    <button class="update" ng-click="$ctrl.updateGoal()">Update Goal</button>
+    <button class="remove" ng-click="$ctrl.deleteGoal()">Remove Goal</button>
+  </div>
+</div>
